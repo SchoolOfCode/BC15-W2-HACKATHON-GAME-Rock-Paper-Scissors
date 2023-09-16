@@ -1,7 +1,42 @@
+// playerNames ["firstName", "score"]
+let firstName = document.getElementById("firstName").value;
+let playerChoiceRock = document.getElementById("playerChoiceRock").value;
+let playerChoicePaper = document.getElementById("playerChoicePaper").value;
+let playerChoiceScissors = document.getElementById("playerChoiceScissors").value;
 
+const computerName = "JeffTheComputer";
 
+var playerArray = [firstName, playerChoiceRock, playerChoicePaper, playerChoiceScissors];
 
+var computerArray = [computerChoiceRock, ComputerChoicePaper, ComputerChoiceScissors];
 
+function computerChoiceRandom(computerArray) {
+    const item = computerArray[randomIndex];
+
+    return item;
+}
+const result = computerChoiceRandom(computerArray);
+console.log(result);
+
+function returnText() {
+    let firstName = document.getElementById("firstName").value;
+    alert(firstName);
+}
+
+console.log(firstName + ". " + "Lets have some fun.");
+
+function returnChoiceRock() {
+    let playerChoiceRock = document.getElementById("playerChoiceRock").value;
+    alert(playerChoiceRock);
+}
+function returnChoicePaper() {
+    let playerChoicePaper = document.getElementById("playerChoicePaper").value;
+    alert(playerChoicePaper);
+}
+function returnChoiceScissors() {
+    let playerChoiceScissors = document.getElementById("playerChoiceScissors").value;
+    alert(playerChoiceScissors);
+}
 
 /*Rock-Paper-Scissors Hackathon
 Brief

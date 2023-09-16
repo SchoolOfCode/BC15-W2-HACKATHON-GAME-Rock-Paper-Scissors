@@ -7,6 +7,24 @@
     <link rel=""stylesheet" href="styles.css">
 </head>
 <body>
+    <h1>Storing Player's input in a variable to be used later for SCORE calculations</h1>
+    <p>Do you want to play Rock, Paper, Scissors? If so follow the insructions below.</p>
+
+    <form id = "form">
+        <p>What is your name?</p><br>
+        <input type="text" id="firstName" name="firstName">
+        <button onclick="returnText()">Submit</button><br>
+        <p></p>
+        <label for="Choice" name="playerChoice">Choose one of ... the options below</label><br>
+        <div>   
+        <p>Select One Only</p>
+        <ul class="choices">
+                <input type="radio" value="Rock" name="rps" id="playerChoiceRock">Rock<br>
+                <input type="radio" value="Paper" name="rps" id="playerChoicePaper">Paper<br>
+                <input type="radio" value="Scissors" name="rps" id="playerChoiceScissors">Scissors<br>
+                <button onclick="returnChoice()">Submit</button>
+        </div>
+    </form>
     <script src="main.js"></script>
 </body>
 </html>
